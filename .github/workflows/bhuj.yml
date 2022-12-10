@@ -6,7 +6,7 @@ on:
     - cron: '0 9 * * *'
 
 jobs:
-  create-vide:
+  create-video:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,7 +20,7 @@ jobs:
         id: setup-ffmpeg
 
       - name: Publish video
-        uses: dailydarshan/video-action@main
+        uses: dailydarshan/action@master
         env:
           TEMPLE: Bhuj-Temple
           OAUTH_CLIENT_ID: ${{ secrets.OAUTH_CLIENT_ID }}
