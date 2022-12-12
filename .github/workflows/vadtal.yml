@@ -3,7 +3,7 @@ name: Vadtal
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 5 * * *'
+    - cron: '5 9 * * *'
 
 jobs:
   create-video:
